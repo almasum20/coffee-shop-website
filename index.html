@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ================ title here =============== -->
+        <title>Coffee Shop</title>
+        <!-- aos animation cdn link -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- ================ css here =============== -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- ================ font awesome cdn =============== -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- ================ favicon here =============== -->
+
+        <link
+            rel="shortcut icon"
+            href="images/fav-icon.png"
+            type="image/x-icon"
+        />
+        <!-- ================ import font =============== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- ================ main here =============== -->
+        <section id="main">
+            <!-- ================ header here =============== -->
+            <header>
+                <!-- ================ navigation here =============== -->
+                <nav class="navigation">
+                    <input type="checkbox" id="menu-btn" class="menu-btn" />
+                    <label for="menu-btn" class="menu-icon"
+                        ><i class="fa-solid fa-bars" id="bar"></i
+                    ></label>
+                    <!-- ================ side menu here =============== -->
+                    <div class="side-menu">
+                        <div class="menu-container">
+                            <strong>Main Links</strong>
+                            <!-- close btn  -->
+                            <label for="menu-btn" class="close-btn">
+                                <i class="fa-solid fa-xmark"></i>
+                            </label>
+                            <!-- menu list -->
+                            <ul class="menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Popular</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Recent</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="logo"
+                        ><img src="images/logo.png" alt="logo"
+                    /></a>
+                    <div class="nav-btns">
+                        <a class="nav-search" href="javascript:void(0);">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="nav-user">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="nav-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>0</span>
+                        </a>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- ================ main content here =============== -->
+            <section class="main-content">
+                <div class="main-content-text" data-aos="fade-right">
+                    <strong>Coffee</strong>
+                    <h1>
+                        Enjoy <br />
+                        Your Morning <br />
+                        Coffee
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Suscipit in architecto aspernatur.
+                    </p>
+                    <span>$14.50</span>
+                    <a href="#">Add To Cart</a>
+                </div>
+                <div class="main-content-img" data-aos="fade-left">
+                    <img src="images/model.png" alt="model" />
+                </div>
+            </section>
+        </section>
+
+        <!-- ================ search =============== -->
+        <section class="search-bar">
+            <form class="search-input">
+                <input
+                    type="text"
+                    name="search"
+                    placeholder="Search For Product"
+                />
+                <a href="javascript:void(0);" class="search-cancel">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+            </form>
+        </section>
+
+        <!-- ================ login form =============== -->
+        <section class="form">
+            <!-- login  -->
+            <div class="login-form">
+                <a href="javascript:void(0);" class="form-cancel">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <strong>Log In</strong>
+                <form>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Example@gmail.com"
+                        required
+                    />
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Password"
+                        required
+                    />
+                    <input type="submit" value="Log In" />
+                </form>
+                <div class="form-btns">
+                    <a href="#">Forget Your Password?</a>
+                    <a href="javascript:void(0);" class="sign-up-btn"
+                        >Create An Account?</a
+                    >
+                </div>
+            </div>
+
+            <!-- sign up  -->
+            <div class="sign-up-form">
+                <a href="javascript:void(0);" class="form-cancel">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <strong>Sign Up</strong>
+                <form>
+                    <input
+                        type="text"
+                        name="fullname"
+                        placeholder="Full Name"
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Example@gmail.com"
+                        required
+                    />
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Password"
+                        required
+                    />
+                    <input type="submit" value="Sign Up" />
+                </form>
+                <div class="form-btns">
+                    <a href="javascript:void(0);" class="already-account"
+                        >Already Have An Account?</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- ================ popular =============== -->
+        <section id="popular">
+            <h2>Popular Coffee</h2>
+            <div class="popular-container">
+                <div class="popular-product-container">
+                    <div class="product-box" data-aos="zoom-in-up">
+                        <div class="product-box-img">
+                            <img src="images/p1.png" alt="product" />
+                            <span>New</span>
+                        </div>
+                        <div class="product-box-text">
+                            <a href="#" class="product-text-title"
+                                >Coffee Beans</a
+                            >
+                            <span>$20 <del>$40</del></span>
+                            <a href="#" class="product-cart-btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart</a
+                            >
+                        </div>
+                    </div>
+                    <!-- cart 2 -->
+                    <div class="product-box" data-aos="zoom-in-up">
+                        <div class="product-box-img">
+                            <img src="images/p2.png" alt="product" />
+                            <span>New</span>
+                        </div>
+                        <div class="product-box-text">
+                            <a href="#" class="product-text-title"
+                                >Coffee Beans</a
+                            >
+                            <span>$20 <del>$40</del></span>
+                            <a href="#" class="product-cart-btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart</a
+                            >
+                        </div>
+                    </div>
+
+                    <!-- cart 3 -->
+                    <div class="product-box" data-aos="zoom-in-up">
+                        <div class="product-box-img">
+                            <img src="images/p3.png" alt="product" />
+                            <span>New</span>
+                        </div>
+                        <div class="product-box-text">
+                            <a href="#" class="product-text-title"
+                                >Coffee Beans</a
+                            >
+                            <span>$20 <del>$40</del></span>
+                            <a href="#" class="product-cart-btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart</a
+                            >
+                        </div>
+                    </div>
+                    <!-- cart 4 -->
+                    <div class="product-box" data-aos="zoom-in-up">
+                        <div class="product-box-img">
+                            <img src="images/p4.png" alt="product" />
+                            <span>New</span>
+                        </div>
+                        <div class="product-box-text">
+                            <a href="#" class="product-text-title"
+                                >Coffee Beans</a
+                            >
+                            <span>$20 <del>$40</del></span>
+                            <a href="#" class="product-cart-btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart</a
+                            >
+                        </div>
+                    </div>
+                    <!-- cart 5 -->
+                    <div class="product-box" data-aos="zoom-in-up">
+                        <div class="product-box-img">
+                            <img src="images/p5.png" alt="product" />
+                            <span>New</span>
+                        </div>
+                        <div class="product-box-text">
+                            <a href="#" class="product-text-title"
+                                >Coffee Beans</a
+                            >
+                            <span>$20 <del>$40</del></span>
+                            <a href="#" class="product-cart-btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart</a
+                            >
+                        </div>
+                    </div>
+                    <!-- cart 6 -->
+                    <div class="product-box" data-aos="zoom-in-up">
+                        <div class="product-box-img">
+                            <img src="images/p6.png" alt="product" />
+                            <span>New</span>
+                        </div>
+                        <div class="product-box-text">
+                            <a href="#" class="product-text-title"
+                                >Coffee Beans</a
+                            >
+                            <span>$20 <del>$40</del></span>
+                            <a href="#" class="product-cart-btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-banner" data-aos="fade-left">
+                    <!-- popular banner text -->
+                    <div class="popular-banner-text">
+                        <h2 id="popular-h2">Coffee Beans Collection</h2>
+                        <a href="#">Shop Now</a>
+                    </div>
+
+                    <div class="popular-banner-img">
+                        <img src="images/banner.png" alt="banner" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================ shopping banner =============== -->
+        <section id="shopping-banner">
+            <div class="shopping-banner-container">
+                <div class="shopping-banner-text" data-aos="fade-right">
+                    <strong>Collection</strong>
+                    <h2>Beautiful Coffee Beans</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolores iste impedit tenetur.
+                    </p>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="shopping-banner-img" data-aos="fade-left">
+                    <img src="images/banner-img.png" alt="banner-img" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ================ recent product =============== -->
+        <section id="recent-product">
+            <h2>Recent Coffee Collection</h2>
+            <div class="recent-product-container">
+                <div class="product-box" data-aos="zoom-in-up">
+                    <div class="product-box-img">
+                        <img src="images/p7.png" alt="product" />
+                        <span>New</span>
+                    </div>
+                    <div class="product-box-text">
+                        <a href="#" class="product-text-title">Coffee Beans</a>
+                        <span>$20 <del>$40</del></span>
+                        <a href="#" class="product-cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</a
+                        >
+                    </div>
+                </div>
+                <!-- cart 2 -->
+                <div class="product-box" data-aos="zoom-in-up">
+                    <div class="product-box-img">
+                        <img src="images/p8.png" alt="product" />
+                        <span>New</span>
+                    </div>
+                    <div class="product-box-text">
+                        <a href="#" class="product-text-title">Coffee Beans</a>
+                        <span>$20 <del>$40</del></span>
+                        <a href="#" class="product-cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</a
+                        >
+                    </div>
+                </div>
+
+                <!-- cart 3 -->
+                <div class="product-box" data-aos="zoom-in-up">
+                    <div class="product-box-img">
+                        <img src="images/p9.png" alt="product" />
+                        <span>New</span>
+                    </div>
+                    <div class="product-box-text">
+                        <a href="#" class="product-text-title">Coffee Beans</a>
+                        <span>$20 <del>$40</del></span>
+                        <a href="#" class="product-cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</a
+                        >
+                    </div>
+                </div>
+                <!-- cart 4 -->
+                <div class="product-box" data-aos="zoom-in-up">
+                    <div class="product-box-img">
+                        <img src="images/p10.png" alt="product" />
+                        <span>New</span>
+                    </div>
+                    <div class="product-box-text">
+                        <a href="#" class="product-text-title">Coffee Beans</a>
+                        <span>$20 <del>$40</del></span>
+                        <a href="#" class="product-cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================ partner logo =============== -->
+        <section id="partner">
+            <img src="images/logo-1.png" alt="logo" />
+            <img src="images/logo-2.png" alt="logo" />
+            <img src="images/logo-3.png" alt="logo" />
+            <img src="images/logo-4.png" alt="logo" />
+        </section>
+
+        <!-- ================ recent product =============== -->
+        <section id="recent-product">
+            <h2>Coffee Collection</h2>
+            <div class="recent-product-container">
+                <div class="product-box" data-aos="zoom-in">
+                    <div class="product-box-img">
+                        <img src="images/pl1.webp" alt="product" />
+                        <span>New</span>
+                    </div>
+                    <div class="product-box-text">
+                        <a href="#" class="product-text-title">Coffee Beans</a>
+                        <span>$20 <del>$40</del></span>
+                        <a href="#" class="product-cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</a
+                        >
+                    </div>
+                </div>
+                <!-- cart 2 -->
+                <div class="product-box" data-aos="zoom-in">
+                    <div class="product-box-img">
+                        <img src="images/pl2.webp" alt="product" />
+                        <span>New</span>
+                    </div>
+                    <div class="product-box-text">
+                        <a href="#" class="product-text-title">Coffee Beans</a>
+                        <span>$20 <del>$40</del></span>
+                        <a href="#" class="product-cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</a
+                        >
+                    </div>
+                </div>
+
+                <!-- cart 3 -->
+                <div class="product-box" data-aos="zoom-in">
+                    <div class="product-box-img">
+                        <img src="images/pl3.webp" alt="product" />
+                        <span>New</span>
+                    </div>
+                    <div class="product-box-text">
+                        <a href="#" class="product-text-title">Coffee Beans</a>
+                        <span>$20 <del>$40</del></span>
+                        <a href="#" class="product-cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</a
+                        >
+                    </div>
+                </div>
+                <!-- cart 4 -->
+                <div class="product-box" data-aos="zoom-in">
+                    <div class="product-box-img">
+                        <img src="images/pl4.webp" alt="product" />
+                        <span>New</span>
+                    </div>
+                    <div class="product-box-text">
+                        <a href="#" class="product-text-title">Coffee Beans</a>
+                        <span>$20 <del>$40</del></span>
+                        <a href="#" class="product-cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add To Cart</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================ download app =============== -->
+        <section id="download-app">
+            <div class="app-img" data-aos="fade-right">
+                <img src="images/mobile-app.jpg" alt="app-image" />
+            </div>
+            <div class="right-side" data-aos="fade-left">
+                <div class="download-app-text"></div>
+                <strong id="download-app-text-strong">Download App</strong>
+                <p id="download-p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero minus culpa vel. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Blanditiis, amet!
+                </p>
+
+                <div class="download-btns">
+                    <a href="#">
+                        <img src="images/appstore-btn.png" alt="app store" />
+                    </a>
+                    <a href="#">
+                        <img
+                            src="images/googleplay-btn.png"
+                            alt="google play store"
+                        />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================ blog =============== -->
+        <section id="blog">
+            <div class="blog-heading">
+                <h2>Recent News</h2>
+            </div>
+            <div class="blog-container">
+                <div class="blog-box" data-aos="fade-right">
+                    <div class="blog-img">
+                        <img src="images/blog-1.jpeg" alt="blog-image" />
+                    </div>
+                    <div class="blog-text">
+                        <span>10 December 2023 / Coffee</span>
+                        <a href="#" class="blog-title"
+                            >We Provide Best Coffee Ever</a
+                        >
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Amet perferendis maxime ipsam perspiciatis
+                            repellendus assumenda.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="images/blog-2.jpg" alt="blog-image" />
+                    </div>
+                    <div class="blog-text">
+                        <span>10 December 2023 / Coffee</span>
+                        <a href="#" class="blog-title"
+                            >We Provide Best Coffee Ever</a
+                        >
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Amet perferendis maxime ipsam perspiciatis
+                            repellendus assumenda.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-box" data-aos="fade-left">
+                    <div class="blog-img">
+                        <img src="images/blog-3.jpg" alt="blog-image" />
+                    </div>
+                    <div class="blog-text">
+                        <span>10 December 2023 / Coffee</span>
+                        <a href="#" class="blog-title"
+                            >We Provide Best Coffee Ever</a
+                        >
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Amet perferendis maxime ipsam perspiciatis
+                            repellendus assumenda.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================ services =============== -->
+        <section id="services">
+            <div class="service-box">
+                <i class="fa-solid fa-truck"></i>
+                <span>Free Shipping</span>
+                <p>Free Shipping For All Orders</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-headphones"></i>
+                <span>Support 24/7</span>
+                <p>Support 24h a day</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-rotate"></i>
+                <span>100% Money Back</span>
+                <p>You have 30 days to return</p>
+            </div>
+        </section>
+
+        <!-- ================ footer =============== -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-company-box">
+                    <a href="#" class="footer-logo">
+                        <img src="images/logo.png" alt="logo" />
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Fuga, laboriosam!
+                    </p>
+                    <div class="footer-social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <!-- link -->
+                <div class="footer-link-box">
+                    <strong>Main Link's</strong>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">Recent</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Collection</a></li>
+                    </ul>
+                </div>
+                <!-- link -->
+                <div class="footer-link-box">
+                    <strong>Social Link's</strong>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+                <!-- subscribe -->
+                <div class="footer-subscribe">
+                    <strong>Subscribe Now</strong>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Culpa, praesentium.
+                    </p>
+                    <form class="subscribe-box">
+                        <input
+                            type="email"
+                            name="subscribe-email"
+                            placeholder="Example@gmail.com"
+                            required
+                        />
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ================ footer bottom =============== -->
+        <div class="footer-bottom">
+            <span>&copy; Copyright 2024 Made By Al-Masum</span>
+        </div>
+
+        <script src="script.js"></script>
+        <!-- aos animation link -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 160,
+                duration: 1000
+            });
+        </script>
+    </body>
+</html>
